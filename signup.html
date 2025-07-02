@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCD Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="ocd.png" alt="OCD" id="ocd">
+    </div>
+
+    <!-- Main Form Container -->
+    <div class="form-container">
+
+        <!-- Left Box: Full Name, Email, Mobile Number, Branch -->
+        <div class="box-left">
+            <h2>Sign Up</h2>
+
+            <div class="form-group">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Mobile Number</label><br>
+                <input type="tel" id="number" placeholder="Enter your mobile no." required>
+            </div>
+
+            <div class="form-group">
+                <label for="branch">Choose Branch</label><br>
+                <select id="branch" required>
+                    <option value="" disabled selected>Select your branch</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="ece">Electronics and Communication</option>
+                    <option value="electrical">Electrical</option>
+                    <option value="mech">Mechanical</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="it">Information Technology</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Right Box: Username, Password, Confirm Password -->
+        <div class="box-right">
+            <div class="form-group">
+                <label for="username">Username</label><br>
+                <input type="text" id="username" placeholder="Enter username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pass">Password</label><br>
+                <input type="password" id="pass" placeholder="Enter password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPass">Confirm Password</label><br>
+                <input type="password" id="confirmPass" placeholder="Confirm password" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn">Sign Up</button>
+            </div>
+
+            <p>Already have an account? <a href="index.html" id="login">Login</a></p>
+
+            <!-- <hr> -->
+            <!-- <p>OR</p> -->
+
+            <!-- Social Media Buttons -->
+            <button class="social-btn facebook">
+                <!-- <img src="fb.jpeg" alt="Facebook"> --> <a href="https://www.facebook.com/" class="button-links">Login with Facebook</a>  
+            </button>
+
+            <button class="social-btn google">
+                <!-- <img src="google.png" alt="Google">--> <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=ASSHykoPu7GHxGkCFyKXlo6lE8J_UdlKcU2DpVDvZQaxW7Ky8WeeYP--lqk5N78oi7ydLhr1nAvmUg&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S688359608%3A1738940616936546&ddm=1" class="button-links">Login with Google</a>  
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>OCD</h3>
+                <p>&copy; 2025 OCD. All Rights Reserved.</p>
+            </div>
+            
+            <div class="footer-center">
+                <p><a href="#" id="footer-link">Privacy Policy</a> | <a href="#" id="footer-link">Terms of Service</a></p>
+            </div>
+    
+            <div class="footer-right">
+                <p>Follow us on:</p>
+                <a href="https://www.facebook.com/nitkurukshetraofficialpage/" target="_blank" class="social-icon"><img src="fb.jpeg" alt="Facebook" class="icon"></a>
+                <a href="https://x.com/ocd_nitkkr" target="_blank" class="social-icon"><img src="twitter.png" alt="Twitter" class="icon"></a>
+                <a href="https://www.instagram.com/ocd_nitkkr/" target="_blank" class="social-icon"><img src="insta.jpg" alt="Instagram" class="icon"></a>
+                <a href="https://www.linkedin.com/showcase/ocd-nitkkr/" target="_blank" class="social-icon"><img src="linkedin.jpg" alt="LinkedIn" class="icon"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
